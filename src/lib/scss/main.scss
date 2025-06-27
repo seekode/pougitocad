@@ -19,6 +19,14 @@
 	overflow-x: hidden;
 }
 
-:global(section) {
-	width: 100%;
+:global {
+	.c {
+		width: 70rem;
+		max-width: calc(100% - 2rem);
+
+		&--full {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
 }
