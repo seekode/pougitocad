@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/components/layouts/Footer.svelte';
 	import Choice from '$lib/components/routes/home/Choice.svelte';
 	import Conformity from '$lib/components/routes/home/Conformity.svelte';
 	import Faq from '$lib/components/routes/home/Faq.svelte';
@@ -10,16 +11,32 @@
 	import Resume from '$lib/components/routes/home/Resume.svelte';
 	import Review from '$lib/components/routes/home/Review.svelte';
 	import Software from '$lib/components/routes/home/Software.svelte';
+	import StickyCard from '$lib/components/ui/StickyCard.svelte';
 </script>
 
-<Resume />
-<Goals />
-<Public />
-<Review />
-<Choice />
-<Program />
-<Need />
-<Handicap />
-<Software />
-<Conformity />
-<Faq />
+<div>
+	<StickyCard />
+	<Resume />
+	<Goals />
+	<Public />
+	<Review />
+	<Choice />
+	<Program />
+	<Need />
+	<Handicap />
+	<Software />
+	<Conformity />
+	<Faq />
+</div>
+<Footer />
+
+<style lang="scss">
+	div {
+		width: 100%;
+		position: relative;
+		overflow-x: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>

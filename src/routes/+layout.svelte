@@ -1,6 +1,8 @@
 <script lang="ts">
 	import NavBar from '$lib/components/layouts/NavBar.svelte';
 	import Header from '$lib/components/routes/home/Header.svelte';
+	import CookieBanner from '$lib/components/ui/CookieBanner.svelte';
+	import ExternalResources from '$lib/components/ui/ExternalResources.svelte';
 	import { closeContact, contact } from '$lib/stores/contact';
 	import AOS from 'aos';
 	import type { Snippet } from 'svelte';
@@ -54,6 +56,8 @@
 		</div>
 	{/key}
 </div>
+<CookieBanner />
+<ExternalResources />
 
 {#if showContact}
 	<div
@@ -71,15 +75,17 @@
 			<button aria-label="close" onclick={closeContact}> </button>
 			<h2>Contactez-moi</h2>
 
-			<div>
-				<a href="mailto:pougitocad@gmail.com">
-					<div><MailIcon /></div>
-					pougitocad@gmail.com
-				</a>
-				<a href="tel:+33788756834">
-					<div><PhoneIcon /></div>
-					+33 7 88 75 68 34
-				</a>
+			<div class="contact-content">
+				<div class="contact-methods">
+					<a href="mailto:pougitocad@gmail.com">
+						<div><MailIcon /></div>
+						pougitocad@gmail.com
+					</a>
+					<a href="tel:+33788756834">
+						<div><PhoneIcon /></div>
+						+33 7 88 75 68 34
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -163,32 +169,49 @@
 				font-size: 2rem;
 				font-weight: bold;
 				text-align: center;
+				margin-bottom: 1.5rem;
 			}
 
-			> div {
+			.contact-content {
 				width: 100%;
 				flex: 1;
 				display: flex;
-				justify-content: center;
-				align-items: center;
-				gap: 5rem;
+				flex-direction: column;
+				gap: 2rem;
 
-				> a {
+				.contact-methods {
+					height: 100%;
 					display: flex;
-					flex-direction: column;
+					justify-content: center;
 					align-items: center;
-					gap: 1rem;
+					gap: 5rem;
 
-					> div {
-						width: 2rem;
-						height: 2rem;
-						padding: 0.5rem;
+					> a {
 						display: flex;
+						flex-direction: column;
 						align-items: center;
-						justify-content: center;
-						border-radius: $radius;
-						background: $primary;
-						color: $bg;
+						gap: 1rem;
+
+						> div {
+							width: 2rem;
+							height: 2rem;
+							padding: 0.5rem;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border-radius: $radius;
+							background: $primary;
+							color: $bg;
+						}
+					}
+				}
+			}
+
+			@media screen and (max-width: 768px) {
+				.contact-content {
+					.contact-methods {
+						flex-direction: column;
+						gap: 2rem;
 					}
 				}
 			}

@@ -13,13 +13,20 @@
 	let sticky: boolean = $state(false);
 
 	onMount(() => {
-		window.addEventListener('scroll', () => {
+		const handleScroll = () => {
+			if (!nav || !header) return;
 			if (window.scrollY + nav.clientHeight >= header.clientHeight - nav.clientHeight) {
 				sticky = true;
 			} else {
 				sticky = false;
 			}
-		});
+		};
+
+		window.addEventListener('scroll', handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
 	});
 </script>
 
@@ -84,6 +91,7 @@
 			position: relative;
 
 			h2 {
+				width: 100%;
 				position: absolute;
 				top: 50%;
 				left: 50%;
@@ -101,7 +109,7 @@
 				font-size: 4rem;
 			}
 
-			h2 {
+			div h2 {
 				font-size: 1.8rem;
 			}
 		}
@@ -113,7 +121,7 @@
 				font-size: 3rem;
 			}
 
-			h2 {
+			div h2 {
 				font-size: 1.3rem;
 			}
 		}

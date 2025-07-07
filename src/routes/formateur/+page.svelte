@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from '$lib/components/layouts/Footer.svelte';
 	import Section from '$lib/components/ui/Section.svelte';
 </script>
 
@@ -25,6 +26,7 @@
 		</p>
 	</div>
 </Section>
+<Footer />
 
 <style lang="scss">
 	.header {
