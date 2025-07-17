@@ -10,17 +10,39 @@
 			<p><strong>Dénomination sociale :</strong> POUGITOCAD</p>
 			<p><strong>Forme juridique :</strong> Entreprise individuelle</p>
 			<p><strong>Responsable de la publication :</strong> Laurent POUGAJENDIRANE</p>
-			<p><strong>Adresse :</strong> [À compléter avec votre adresse]</p>
-			<p><strong>Téléphone :</strong> +33 7 88 75 68 34</p>
-			<p><strong>Email :</strong> pougitocad@gmail.com</p>
-			<p><strong>Numéro de déclaration d'activité :</strong> [À compléter avec votre numéro]</p>
+			<p><strong>Adresse :</strong> 20 rue des fontaines 60157 Elincourt Sainte Marguerite</p>
+			<p>
+				<strong>Téléphone :</strong>
+				<a href="tel:+33788756834" style="color: blue">+33 7 88 75 68 34</a>
+			</p>
+			<p>
+				<strong>Email :</strong>
+				<a href="mailto:pougitocad@gmail.com" style="color: blue">pougitocad@gmail.com</a>
+			</p>
+			<p><strong>Numéro de déclaration d'activité :</strong> 11950855495</p>
 		</div>
 
 		<div class="section">
 			<h3>Hébergement</h3>
 			<p>Le site web est hébergé par :</p>
-			<p><strong>Nom de l'hébergeur :</strong> [À compléter]</p>
-			<p><strong>Adresse :</strong> [À compléter]</p>
+			<p>
+				<strong>Nom de l'hébergeur :</strong>
+				<a href="https://www.o2switch.fr" target="_blank" style="color: blue">O2Switch</a>
+			</p>
+			<p><strong>Adresse :</strong> Chem. des Pardiaux, 63000 Clermont-Ferrand</p>
+		</div>
+
+		<div class="section">
+			<h3>Conception</h3>
+			<p>Le site web à été conçu par :</p>
+			<p>
+				<strong>Nom :</strong>
+				<a href="https://seekode.dev" target="_blank">Nicolas Texier | Seekode</a>
+			</p>
+			<p>
+				<strong>Site web :</strong>
+				<a href="https://seekode.dev" target="_blank" style="color: blue">https://seekode.dev</a>
+			</p>
 		</div>
 
 		<div class="section">

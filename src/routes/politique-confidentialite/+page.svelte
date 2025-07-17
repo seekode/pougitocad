@@ -8,8 +8,8 @@
 		<div class="section">
 			<h3>Collecte des données personnelles</h3>
 			<p>
-				POUGITOCAD collecte vos données personnelles dans le cadre de ses activités de formation
-				professionnelle. Les données collectées sont :
+				POUGITOCAD, agissant comme responsable de traitement, collecte vos données personnelles dans
+				le cadre de ses activités de formation professionnelle. Les données collectées sont :
 			</p>
 			<ul>
 				<li>Nom et prénom</li>
@@ -86,12 +86,28 @@
 		<div class="section">
 			<h3>Contact</h3>
 			<p>
-				Pour toute question concernant cette politique de confidentialité, vous pouvez nous
-				contacter à : <strong>pougitocad@gmail.com</strong>
+				Pour toute question concernant cette politique de confidentialité ou pour faire valoir
+				l'exercice de vos droits, vous pouvez nous contacter à :
+				<a href="mailto:pougitocad@gmail.com" style="color: blue">
+					<strong>pougitocad@gmail.com</strong>
+				</a>
 			</p>
 			<p>
-				Vous pouvez également introduire une réclamation auprès de la CNIL (Commission Nationale de
-				l'Informatique et des Libertés).
+				Si vous estimez que vos droits au regard de la réglementation sur la protection des données
+				personnelles ne sont pas respectés, vous pouvez introduire une réclamation auprès de la CNIL
+				(Commission Nationale de l'Informatique et des Libertés), soit par le biais du formulaire en
+				ligne mis à disposition par la CNIL à l'adresse suivante :
+				<a href="https://www.cnil.fr/fr/plaintes" target="_blank">
+					<strong>Plaintes | CNIL</strong>
+				</a>
+				, soit par courrier postal à l'adresse :
+			</p>
+			<p>
+				Commission nationale de l’informatique et des libertés <br />
+				Service des plaintes <br />
+				3 Place de Fontenoy <br />
+				TSA80715 <br />
+				75334 PARIS CEDEX 07
 			</p>
 		</div>
 	</div>
