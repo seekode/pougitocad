@@ -83,7 +83,7 @@
 			<h3>Contact</h3>
 			<p>
 				Pour toute question concernant notre politique des cookies, vous pouvez nous contacter à : <strong
-					>pougitocad@gmail.com</strong
+					>pougi.yogi@gmail.com</strong
 				>
 			</p>
 		</div>
@@ -106,7 +106,7 @@
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
 		h3 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.25rem;
 			font-weight: 700;
 			margin-bottom: 1rem;
@@ -120,7 +120,7 @@
 			margin-bottom: 0.75rem;
 
 			strong {
-				color: #8b1538;
+				color: $primary;
 				font-weight: 500;
 			}
 		}
@@ -135,7 +135,7 @@
 				line-height: 1.6;
 
 				strong {
-					color: #8b1538;
+					color: $primary;
 					font-weight: 500;
 				}
 			}
@@ -150,7 +150,7 @@
 		border-left: 4px solid $primary;
 
 		h4 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.1rem;
 			font-weight: 600;
 			margin-bottom: 0.5rem;

@@ -1,32 +1,22 @@
 <script>
 	import Footer from '$lib/components/layouts/Footer.svelte';
-	import Choice from '$lib/components/routes/home/Choice.svelte';
-	import Conformity from '$lib/components/routes/home/Conformity.svelte';
+	import ContactLieux from '$lib/components/routes/home/ContactLieux.svelte';
+	import Enseignant from '$lib/components/routes/home/Enseignant.svelte';
 	import Faq from '$lib/components/routes/home/Faq.svelte';
-	import Goals from '$lib/components/routes/home/Goals.svelte';
-	import Handicap from '$lib/components/routes/home/Handicap.svelte';
-	import Need from '$lib/components/routes/home/Need.svelte';
-	import Program from '$lib/components/routes/home/Program.svelte';
-	import Public from '$lib/components/routes/home/Public.svelte';
-	import Resume from '$lib/components/routes/home/Resume.svelte';
-	import Review from '$lib/components/routes/home/Review.svelte';
-	import Software from '$lib/components/routes/home/Software.svelte';
-	import StickyCard from '$lib/components/ui/StickyCard.svelte';
+	import FormationsStages from '$lib/components/routes/home/FormationsStages.svelte';
+	import Galerie from '$lib/components/routes/home/Galerie.svelte';
+	import Intro from '$lib/components/routes/home/Intro.svelte';
+	import PlanningTarifs from '$lib/components/routes/home/PlanningTarifs.svelte';
 </script>
 
 <div>
-	<StickyCard />
-	<Resume />
-	<Goals />
-	<Public />
-	<Review />
-	<Choice />
-	<Program />
-	<Need />
-	<Handicap />
-	<Software />
-	<Conformity />
-	<Faq />
+	<div id="accueil" class="anchor"><Intro /></div>
+	<div id="planning-tarifs" class="anchor anchor--alt"><PlanningTarifs /></div>
+	<div id="formations-stages" class="anchor"><FormationsStages /></div>
+	<div id="enseignant" class="anchor anchor--alt"><Enseignant /></div>
+	<div id="contact" class="anchor"><ContactLieux /></div>
+	<div id="galerie" class="anchor anchor--alt"><Galerie /></div>
+	<div id="faq" class="anchor"><Faq /></div>
 </div>
 <Footer />
 
@@ -38,5 +28,13 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.anchor {
+		scroll-margin-top: 6rem;
+
+		&--alt {
+			background: $bg-alt;
+		}
 	}
 </style>

@@ -19,6 +19,14 @@
 	overflow-x: hidden;
 }
 
+:global(h1),
+:global(h2),
+:global(h3),
+:global(h4) {
+	font-family: $heading-font;
+	letter-spacing: 0.02em;
+}
+
 :global {
 	.c {
 		width: 70rem;

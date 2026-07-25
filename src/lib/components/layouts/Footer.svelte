@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { openContact } from '$lib/stores/contact';
+	import { resolve } from '$app/paths';
 	import { cookieConsent } from '$lib/stores/cookies';
-	import MailIcon from '~icons/uil/envelope';
 	import LocationIcon from '~icons/uil/map-marker';
+	import MailIcon from '~icons/uil/envelope';
 	import PhoneIcon from '~icons/uil/phone';
 	import CookieIcon from '~icons/uil/shield-check';
 
@@ -22,45 +22,49 @@
 	<div class="footer-content">
 		<div class="footer-section">
 			<div class="logo-section">
-				<img src="/logo.png" alt="POUGITOCAD Logo" />
-				<p>Formation professionnelle AutoCAD</p>
+				<img src="/images/site/logo-tadasana.jpg" alt="Association Tadasana Logo" />
+				<p>Association Yoga Tadasana - Cours adultes & Power-Up enfants/ados</p>
 			</div>
 		</div>
 
 		<div class="footer-section">
 			<h4>Contact</h4>
 			<div class="contact-info">
-				<button class="contact-link" on:click={openContact}>
+				<a class="contact-link" href="mailto:pougi.yogi@gmail.com">
 					<MailIcon />
-					pougitocad@gmail.com
-				</button>
-				<button class="contact-link" on:click={openContact}>
+					pougi.yogi@gmail.com
+				</a>
+				<a class="contact-link" href="tel:+33788756834">
 					<PhoneIcon />
 					+33 7 88 75 68 34
-				</button>
+				</a>
 				<div class="contact-item">
 					<LocationIcon />
-					France
+					Élincourt-Sainte-Marguerite & Lassigny
 				</div>
 			</div>
 		</div>
 
 		<div class="footer-section">
-			<h4>Formation</h4>
+			<h4>Rubriques</h4>
 			<nav class="footer-nav">
-				<a href="/">Accueil</a>
-				<a href="/formateur">Formateur</a>
-				<a href="/documents/plan_de_cours.pdf" target="_blank">Plan de cours</a>
+				<a href={resolve('/')}>Accueil</a>
+				<a href={resolve('/#planning-tarifs')}>Planning / Tarifs</a>
+				<a href={resolve('/#formations-stages')}>Formations / Stages</a>
+				<a href={resolve('/#enseignant')}>Enseignant</a>
+				<a href={resolve('/#contact')}>Contact / Lieux</a>
+				<a href={resolve('/#galerie')}>Galerie Photos</a>
+				<a href={resolve('/#faq')}>FAQ</a>
 			</nav>
 		</div>
 
 		<div class="footer-section">
 			<h4>Informations légales</h4>
 			<nav class="footer-nav">
-				<a href="/mentions-legales">Mentions légales</a>
-				<a href="/politique-confidentialite">Politique de confidentialité</a>
-				<a href="/politique-cookies">Politique des cookies</a>
-				<button class="cookie-settings-btn" on:click={reopenCookieBanner}>
+				<a href={resolve('/mentions-legales')}>Mentions légales</a>
+				<a href={resolve('/politique-confidentialite')}>Politique de confidentialité</a>
+				<a href={resolve('/politique-cookies')}>Politique des cookies</a>
+				<button class="cookie-settings-btn" onclick={reopenCookieBanner}>
 					<CookieIcon />
 					Paramètres des cookies
 				</button>
@@ -69,8 +73,8 @@
 	</div>
 
 	<div class="footer-bottom">
-		<p>&copy; 2024 POUGITOCAD - Tous droits réservés</p>
-		<p>Organisme de formation certifié Qualiopi</p>
+		<p>&copy; 2026 Association TADASANA - Tous droits réservés</p>
+		<p>Association loi 1901</p>
 	</div>
 </footer>
 
@@ -86,7 +90,7 @@
 			margin: 0 auto;
 			padding: 0 2rem;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 			gap: 2rem;
 
 			.footer-section {
@@ -95,13 +99,14 @@
 					font-size: 1.1rem;
 					font-weight: 600;
 					margin-bottom: 1rem;
-					border-bottom: 2px solid black;
+					border-bottom: 2px solid $active;
 					padding-bottom: 0.5rem;
 				}
 
 				.logo-section {
 					img {
-						height: 2.5rem;
+						height: 3rem;
+						border-radius: $radius;
 						margin-bottom: 0.5rem;
 					}
 
@@ -131,7 +136,7 @@
 						text-align: left;
 
 						&:hover {
-							color: #7dd3d8;
+							color: $accent;
 						}
 					}
 
@@ -156,7 +161,7 @@
 						transition: color 0.3s ease;
 
 						&:hover {
-							color: #7dd3d8;
+							color: $accent;
 						}
 					}
 
@@ -189,7 +194,7 @@
 		}
 
 		.footer-bottom {
-			border-top: 1px solid #6c757d;
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
 			margin-top: 2rem;
 			padding-top: 1rem;
 			text-align: center;

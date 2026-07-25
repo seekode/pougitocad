@@ -1,7 +1,18 @@
-$primary: #a7394c;
-$active: #6c1926;
-$bg: #ececec;
-$text: #202020;
+// Palette Association Tadasana - beige clair / marron foncé / touches de vert
+$primary: #8b5a3c; // marron principal (titres, accents)
+$active: #5c3a24; // marron foncé (hover, header table, footer)
+$accent: #c98a4b; // orange-terracotta (sous-titres, mise en valeur)
+$green: #7d8c5c; // vert sauge (touches de couleur, comme sur le logo)
+$bg: #faf6ee; // beige clair (fond principal)
+$bg-alt: #f0ece0; // beige légèrement plus soutenu (cartes, lignes alternées)
+$text: #3a2e22; // texte marron très foncé, presque noir
 $radius: 0.7rem;
 
+// Variantes assombries, utilisées uniquement comme fond de bandeaux avec du texte
+// blanc par-dessus (garantit un contraste suffisant, sans changer la teinte de base
+// utilisée ailleurs sur le site).
+$accent-deep: #96673a; // $accent assombri (~25%)
+$green-deep: #6b7a4c; // $green assombri (~15%)
+
 $roboto: 'Roboto', sans-serif;
+$heading-font: 'Jost', 'Roboto', sans-serif;

@@ -8,14 +8,15 @@
 		<div class="section">
 			<h3>Collecte des données personnelles</h3>
 			<p>
-				POUGITOCAD, agissant comme responsable de traitement, collecte vos données personnelles dans
-				le cadre de ses activités de formation professionnelle. Les données collectées sont :
+				L'Association TADASANA, agissant comme responsable de traitement, collecte vos données
+				personnelles dans le cadre de ses activités associatives (cours de yoga, adhésions, stages).
+				Les données collectées sont :
 			</p>
 			<ul>
 				<li>Nom et prénom</li>
 				<li>Adresse email</li>
 				<li>Numéro de téléphone</li>
-				<li>Informations relatives à votre demande de formation</li>
+				<li>Informations relatives à votre adhésion ou votre demande d'inscription</li>
 			</ul>
 		</div>
 
@@ -23,9 +24,9 @@
 			<h3>Finalités du traitement</h3>
 			<p>Vos données personnelles sont utilisées pour :</p>
 			<ul>
-				<li>Répondre à vos demandes de contact et de devis</li>
-				<li>Organiser et dispenser les formations</li>
-				<li>Assurer le suivi administratif et pédagogique</li>
+				<li>Répondre à vos demandes de contact et d'inscription</li>
+				<li>Gérer les adhésions et organiser les cours, stages et événements</li>
+				<li>Assurer le suivi administratif de l'association</li>
 				<li>Respecter nos obligations légales et réglementaires</li>
 			</ul>
 		</div>
@@ -35,8 +36,8 @@
 			<p>Le traitement de vos données personnelles est basé sur :</p>
 			<ul>
 				<li>Votre consentement pour les demandes de contact</li>
-				<li>L'exécution du contrat de formation</li>
-				<li>Le respect d'obligations légales (formation professionnelle)</li>
+				<li>L'exécution du contrat d'adhésion à l'association</li>
+				<li>Le respect d'obligations légales</li>
 			</ul>
 		</div>
 
@@ -45,7 +46,7 @@
 			<p>Vos données personnelles sont conservées :</p>
 			<ul>
 				<li>3 ans pour les demandes de contact non converties</li>
-				<li>5 ans pour les dossiers de formation (obligations légales)</li>
+				<li>5 ans pour les dossiers d'adhésion (obligations légales)</li>
 				<li>10 ans pour les documents comptables</li>
 			</ul>
 		</div>
@@ -62,7 +63,7 @@
 				<li><strong>Droit à la limitation :</strong> limiter le traitement</li>
 			</ul>
 			<p>
-				Pour exercer vos droits, contactez-nous à : <strong>pougitocad@gmail.com</strong>
+				Pour exercer vos droits, contactez-nous à : <strong>pougi.yogi@gmail.com</strong>
 			</p>
 		</div>
 
@@ -88,8 +89,8 @@
 			<p>
 				Pour toute question concernant cette politique de confidentialité ou pour faire valoir
 				l'exercice de vos droits, vous pouvez nous contacter à :
-				<a href="mailto:pougitocad@gmail.com" style="color: blue">
-					<strong>pougitocad@gmail.com</strong>
+				<a href="mailto:pougi.yogi@gmail.com" style="color: blue">
+					<strong>pougi.yogi@gmail.com</strong>
 				</a>
 			</p>
 			<p>
@@ -130,7 +131,7 @@
 		border: 1px solid #e9ecef;
 
 		h3 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.25rem;
 			font-weight: 700;
 			margin-bottom: 1rem;
@@ -144,7 +145,7 @@
 			margin-bottom: 0.75rem;
 
 			strong {
-				color: #8b1538;
+				color: $primary;
 				font-weight: 500;
 			}
 		}
@@ -159,7 +160,7 @@
 				line-height: 1.6;
 
 				strong {
-					color: #8b1538;
+					color: $primary;
 					font-weight: 500;
 				}
 			}

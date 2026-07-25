@@ -18,9 +18,10 @@
 
 	const { children, data }: Props = $props();
 
-	const subtitle = {
-		'/': 'AutoCADLT - Initiation débutant 2D',
-		'/formateur': 'Formateur'
+	const subtitle: Record<string, string> = {
+		'/mentions-legales': 'Mentions légales',
+		'/politique-confidentialite': 'Politique de confidentialité',
+		'/politique-cookies': 'Politique des cookies'
 	};
 
 	let showContact = $state(false);
@@ -49,7 +50,7 @@
 
 <NavBar />
 <div class="page">
-	<Header subtitle={subtitle[data.url as keyof typeof subtitle]} />
+	<Header subtitle={subtitle[data.url] ?? ''} showQuote={data.url === '/'} />
 	{#key data.url}
 		<div class="content" transition:fade={{ duration: 500 }}>
 			{@render children()}
@@ -77,9 +78,9 @@
 
 			<div class="contact-content">
 				<div class="contact-methods">
-					<a href="mailto:pougitocad@gmail.com">
+					<a href="mailto:pougi.yogi@gmail.com">
 						<div><MailIcon /></div>
-						pougitocad@gmail.com
+						pougi.yogi@gmail.com
 					</a>
 					<a href="tel:+33788756834">
 						<div><PhoneIcon /></div>

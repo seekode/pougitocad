@@ -7,19 +7,19 @@
 	<div class="legal-content">
 		<div class="section">
 			<h3>Identification de l'éditeur</h3>
-			<p><strong>Dénomination sociale :</strong> POUGITOCAD</p>
-			<p><strong>Forme juridique :</strong> Entreprise individuelle</p>
-			<p><strong>Responsable de la publication :</strong> Laurent POUGAJENDIRANE</p>
-			<p><strong>Adresse :</strong> 20 rue des fontaines 60157 Elincourt Sainte Marguerite</p>
+			<p><strong>Dénomination sociale :</strong> Association TADASANA</p>
+			<p><strong>Forme juridique :</strong> Association loi 1901</p>
+			<p><strong>Responsable de la publication :</strong> Laurent POUGAJENDIRANE (Président)</p>
+			<p><strong>Siège social :</strong> 1 ter rue du Crotois, 60157 Élincourt-Sainte-Marguerite</p>
 			<p>
 				<strong>Téléphone :</strong>
 				<a href="tel:+33788756834" style="color: blue">+33 7 88 75 68 34</a>
 			</p>
 			<p>
 				<strong>Email :</strong>
-				<a href="mailto:pougitocad@gmail.com" style="color: blue">pougitocad@gmail.com</a>
+				<a href="mailto:pougi.yogi@gmail.com" style="color: blue">pougi.yogi@gmail.com</a>
 			</p>
-			<p><strong>Numéro de déclaration d'activité :</strong> 11950855495</p>
+			<p><strong>N° RNA :</strong> à compléter par l'association</p>
 		</div>
 
 		<div class="section">
@@ -62,7 +62,7 @@
 				périodiquement remis à jour, mais peut toutefois contenir des inexactitudes, des omissions
 				ou des lacunes. Si vous constatez une lacune, erreur ou ce qui parait être un
 				dysfonctionnement, merci de bien vouloir le signaler par email à l'adresse
-				pougitocad@gmail.com.
+				pougi.yogi@gmail.com.
 			</p>
 		</div>
 
@@ -95,7 +95,7 @@
 		border: 1px solid #e9ecef;
 
 		h3 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.25rem;
 			font-weight: 700;
 			margin-bottom: 1rem;
@@ -109,7 +109,7 @@
 			margin-bottom: 0.75rem;
 
 			strong {
-				color: #8b1538;
+				color: $primary;
 				font-weight: 500;
 			}
 		}

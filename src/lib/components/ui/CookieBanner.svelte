@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import {
 		acceptAllCookies,
 		acceptNecessaryCookies,
@@ -59,7 +60,7 @@
 					comment vous utilisez notre site.
 				</p>
 				<p>
-					<a href="/politique-cookies" target="_blank"
+					<a href={resolve('/politique-cookies')} target="_blank"
 						>En savoir plus sur notre politique des cookies</a
 					>
 				</p>
@@ -118,7 +119,7 @@
 		left: 0;
 		right: 0;
 		background: #ffffff;
-		border-top: 3px solid #8b1538;
+		border-top: 3px solid $primary;
 		box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.15);
 		z-index: 1000;
 		max-height: 80vh;
@@ -138,14 +139,14 @@
 		margin-bottom: 1rem;
 
 		h3 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.25rem;
 			font-weight: 700;
 			margin: 0;
 		}
 
 		:global(svg) {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1.5rem;
 		}
 	}
@@ -160,12 +161,12 @@
 		}
 
 		a {
-			color: #8b1538;
+			color: $primary;
 			text-decoration: underline;
 			font-weight: 500;
 
 			&:hover {
-				color: #6b1129;
+				color: $active;
 			}
 		}
 	}
@@ -194,7 +195,7 @@
 		flex: 1;
 
 		h4 {
-			color: #8b1538;
+			color: $primary;
 			font-size: 1rem;
 			font-weight: 600;
 			margin: 0 0 0.25rem 0;
@@ -209,7 +210,7 @@
 
 	.setting-toggle {
 		.required {
-			background: #8b1538;
+			background: $primary;
 			color: #ffffff;
 			padding: 0.25rem 0.75rem;
 			border-radius: 4px;
